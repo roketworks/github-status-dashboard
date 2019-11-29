@@ -81,6 +81,11 @@ button:focus, button:hover {
 	border-color: #666;
 }
 
+button:disabled {
+  background-color: #bbb;
+  background-image: none;
+}
+
 
 button:not(:disabled):active {
 	background-color: #ddd;

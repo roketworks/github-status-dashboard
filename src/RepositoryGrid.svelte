@@ -3,5 +3,5 @@
 </script>
 
 {#each repositories as repository}
-  <div>{repository}</div>
+  <div>{repository.nameWithOwner}</div>
 {/each}
