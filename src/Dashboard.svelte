@@ -7,7 +7,7 @@
   let newRepository = '';
 
   repositoryStore.subscribe(value => {
-    repositories = value.sort((a, b) => a.nameWithOwner.toLowerCase().localeCompare(b.nameWithOwner.toLowerCase()));
+    repositories = value;
   });
 
   let getRepositoryPromise;
@@ -46,5 +46,11 @@
     </button>
   </header>
 
-  <RepositoryGrid repositories={repositories} />
+  <RepositoryGrid repositoryIds={repositories.map(x => x.id)} />
 </section>
+
+<style>
+header {
+  padding: 12px;
+}
+</style>

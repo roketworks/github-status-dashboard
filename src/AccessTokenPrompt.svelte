@@ -20,12 +20,11 @@
       <a href="https://github.com/settings/tokens">GitHub</a>.
     </p>
     <p>
-      This dashboard does not require any admin or write permissions.  Your new access token should
-      have the following scopes:
+      Your new access token should have the following scopes:
     </p>
 
     <ul>
-      <li>repo:status</li>
+      <li>repo</li>
     </ul>
 
     <label for="access-token">Access token</label>
